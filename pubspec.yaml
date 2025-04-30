@@ -1,0 +1,68 @@
+name: movie_tmdb
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  auto_route: ^10.0.1
+  cached_network_image: ^3.4.1
+  dio: ^5.8.0+1
+  equatable: ^2.0.7
+  flex_color_scheme: ^8.2.0
+  flutter_bloc: ^9.1.0
+  flutter_dotenv: ^5.2.1
+  flutter_gen: ^5.10.0
+  flutter_hooks: ^0.21.2
+  flutter_screenutil: ^5.9.3
+  flutter_svg: ^2.0.17
+  fpdart: ^1.1.1
+  get_it: ^8.0.3
+  hydrated_bloc: ^10.0.0
+  intl: ^0.20.2
+  # isar: ^3.0.0
+  # isar_flutter_libs: ^3.0.0
+  json_annotation: ^4.9.0
+  path_provider: ^2.1.5
+  path: ^1.9.1
+  pretty_dio_logger: ^1.4.0
+  shimmer: ^3.0.0
+  url_launcher: ^6.3.1
+  sqflite: ^2.4.2
+
+dev_dependencies:
+  # auto_route generator => https://pub.dev/packages/auto_route_generator
+  auto_route_generator:
+    ^10.0.1
+    # for testing bloc => https://pub.dev/packages/bloc_test
+  bloc_test:
+    ^10.0.0
+    #  => https://pub.dev/packages/build_runner
+  build_runner: ^2.4.15
+  # https://pub.dev/packages/flutter_gen_runner
+  flutter_gen_runner: ^5.10.0
+
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  # isar_generator: ^3.0.0
+  # for creating api models => https://pub.dev/packages/json_serializable
+  json_serializable: ^6.9.4
+  # for testing => https://pub.dev/packages/mockito
+  mockito: ^5.4.5
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/icons/
+    - .env
+
+flutter_gen:
+  integrations:
+    flutter_svg: true
